@@ -31,7 +31,7 @@ Danny wants to use the data to answer a few simple questions about his customers
 ***
 
 ## Case Study #2: Pizza Runner
-![case2](https://user-images.githubusercontent.com/70214561/209432162-a4c48b33-9534-40f7-bdc2-fe609966dbdf.png)
+<img src="https://user-images.githubusercontent.com/70214561/209432162-a4c48b33-9534-40f7-bdc2-fe609966dbdf.png" alt="Image" width="500" height="520">
 
 View the case study [here](https://8weeksqlchallenge.com/case-study-2/).
 
@@ -58,7 +58,7 @@ This case study focuses on using subscription style digital data to answer impor
 ***
 
 ## Case Study #4: Data Bank
-<img width="546" alt="case4" src="https://user-images.githubusercontent.com/70214561/209432191-e6fc6127-1752-4994-8999-3a60ab67ba5f.png">
+<img src="https://user-images.githubusercontent.com/70214561/209432191-e6fc6127-1752-4994-8999-3a60ab67ba5f.png" alt="Image" width="500" height="520">
 
 View the case study [here](https://8weeksqlchallenge.com/case-study-4/).
 
@@ -74,7 +74,7 @@ This case study is all about calculating metrics, growth and helping the busines
 ***
 
 ## Case Study #5: Data Mart
-<img width="544" alt="case5" src="https://user-images.githubusercontent.com/70214561/209432203-ec1fa161-c4fb-42ea-be64-89e42bf93ca7.png">
+<img src="https://user-images.githubusercontent.com/70214561/209432203-ec1fa161-c4fb-42ea-be64-89e42bf93ca7.png" alt="Image" width="500" height="520">
 
 View the case study [here](https://8weeksqlchallenge.com/case-study-5/).
 
@@ -93,7 +93,7 @@ The key business question to answer are the following:
 ***
 
 ## Case Study #6: Clique Bait
-<img width="545" alt="case6" src="https://user-images.githubusercontent.com/70214561/209432218-42f4578a-3475-429a-8bb4-a6a943c6c116.png">
+<img src="https://user-images.githubusercontent.com/70214561/209432218-42f4578a-3475-429a-8bb4-a6a943c6c116.png" alt="Image" width="500" height="520">
 
 View the case study [here](https://8weeksqlchallenge.com/case-study-6/).
 
@@ -105,7 +105,7 @@ In this case study - you are required to support Danny’s vision and analyse hi
 ***
 
 ## Case Study #7: Balanced Tree Clothing Co
-![case7](https://user-images.githubusercontent.com/70214561/209432227-b6ea5830-24c9-47e8-aecf-f5f7b83cd62c.png)
+<img src="https://user-images.githubusercontent.com/70214561/209432227-b6ea5830-24c9-47e8-aecf-f5f7b83cd62c.png" alt="Image" width="500" height="520">
 
 View the case study [here](https://8weeksqlchallenge.com/case-study-7/).
 
