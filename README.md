@@ -18,7 +18,7 @@ Thanks @DataWithDanny for the excellent SQL case studies!
 ***
 
 ## Case Study #1: Danny's Diner 
-![case1](https://user-images.githubusercontent.com/70214561/209432150-c5877070-27b9-4f21-ac9b-33e412bd69c4.png)
+<img src="https://user-images.githubusercontent.com/70214561/209432150-c5877070-27b9-4f21-ac9b-33e412bd69c4.png" alt="Image" width="500" height="520">
 
 View the case study [here](https://8weeksqlchallenge.com/case-study-1/).
 
@@ -117,7 +117,7 @@ Danny, the CEO of this trendy fashion company has asked you to assist the teamâ€
 ***
 
 ## Case Study #8: Fresh Segments
-<img width="544" alt="case8" src="https://user-images.githubusercontent.com/70214561/209432285-4953d96e-bcb9-4bd6-9ee7-63e637794b00.png">
+<img src="https://user-images.githubusercontent.com/70214561/209432285-4953d96e-bcb9-4bd6-9ee7-63e637794b00.png" alt="Image" width="500" height="520">
 
 View the case study [here](https://8weeksqlchallenge.com/case-study-8/).
 
