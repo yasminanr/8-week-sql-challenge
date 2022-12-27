@@ -82,16 +82,16 @@ WHERE r.distance != 0;
 
 -- Question 9: What was the total volume of pizzas ordered for each hour of the day?
 SELECT 
-  HOUR(order_time) AS hour_of_the_day, 
-  COUNT(pizza_id) AS pizza_count
+	HOUR(order_time) AS hour_of_the_day, 
+	COUNT(pizza_id) AS pizza_count
 FROM customer_orders_temp
 GROUP BY hour_of_the_day
 ORDER BY hour_of_the_day;
 
 -- Question 10: What was the volume of orders for each day of the week?
 SELECT 
-  DAYNAME(order_time) AS day_of_the_week, 
-  COUNT(order_id) AS pizza_count
+	DAYNAME(order_time) AS day_of_the_week, 
+	COUNT(order_id) AS pizza_count
 FROM customer_orders_temp
 GROUP BY day_of_the_week
 ORDER BY day_of_the_week;
