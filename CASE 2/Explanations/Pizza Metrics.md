@@ -180,7 +180,7 @@ customer_id | with_change | no_change
 105 | 1 | 0
 
 - Customer 101 and 102 like their pizzas with the original recipe. They ordered pizzas without requesting any change.
-- Customer 103 ordered 3 with pizzas change.
+- Customer 103 ordered 3 pizzas with change.
 - Customer 104 ordered pizzas 2 with change and 1 without change.
 - Customer 105 ordered 1 pizza with change.
 
@@ -225,8 +225,8 @@ hour_of_the_day | pizza_count
 21 | 3
 23 | 3
 
-- Highest volume of pizza ordered is at 1:00 pm, 6:00 pm and 9:00 pm.
-- Lowest volume of pizza ordered is at 11:00 am, 7:00 pm and 11:00 pm.
+- Highest volume of pizza ordered is at 1:00 pm, 6:00 pm, 9:00 pm, and 11:00 pm.
+- Lowest volume of pizza ordered is at 11:00 am and 7:00 pm.
 
 ### Question 10: What was the volume of orders for each day of the week?
 
