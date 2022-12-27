@@ -35,15 +35,14 @@ WHERE r.distance != 0
 GROUP BY c.pizza_id;
 
 -- Question 5: How many Vegetarian and Meatlovers were ordered by each customer?
-SELECT
-	c.customer_id,
-    p.pizza_name,
-    COUNT(p.pizza_name) AS amount_ordered
-FROM customer_orders_temp c
-JOIN pizza_names p
-	USING (pizza_id)
-GROUP BY c.customer_id, p.pizza_name
-ORDER BY c.customer_id;
+SELECT 
+	customer_id,
+	SUM(CASE WHEN pizza_id = 1 THEN 1
+		ELSE 0 END) meatlovers,
+	SUM(CASE WHEN pizza_id = 2 THEN 1
+		ELSE 0 END) vegetarian
+FROM customer_orders_temp
+GROUP BY customer_id;
 
 -- Question 6: What was the maximum number of pizzas delivered in a single order?
 SELECT 
