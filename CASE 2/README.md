@@ -15,8 +15,8 @@ He has prepared for us an entity relationship diagram of his database design but
 
 ## Entity Relationship Diagram
 
-<img src="https://user-images.githubusercontent.com/70214561/209917769-b441bd19-1fe6-482a-8cf8-3a2ea40f3b06.png" alt="Image" width="500" height="520">
-  
+![case2erd](https://user-images.githubusercontent.com/70214561/209917886-ee3fe894-152b-4642-9d63-2dcbaa3cd777.png)
+
 ## Questions
 This case study has LOTS of questions - they are broken up by area of focus including:
 - Pizza Metrics
