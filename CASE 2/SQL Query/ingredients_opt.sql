@@ -123,12 +123,15 @@ GROUP BY e.exclusions
 -- Meat Lovers - Extra Bacon
 -- Meat Lovers - Exclude Cheese, Bacon - Extra Mushroom, Peppers
 
+DROP TEMPORARY TABLE IF EXISTS order_item;
+CREATE TEMPORARY TABLE order_item AS
 WITH customer_orders_with_id AS (
 	SELECT (@rn := @rn + 1) AS customer_order_id, customer_orders.*
 	FROM customer_orders CROSS JOIN
 			(SELECT @rn := 0) vars
 )
 SELECT 
+	order_id,
 	CONCAT_WS(' - ', 
 		GROUP_CONCAT(DISTINCT(pizza_name)), 
 		CONCAT("Exclude ",GROUP_CONCAT(DISTINCT(excluded_topping.topping_name) SEPARATOR ', ')),
@@ -139,3 +142,16 @@ LEFT JOIN pizza_toppings excluded_topping ON JSON_CONTAINS(CAST(CONCAT('[', excl
 LEFT JOIN pizza_toppings extra_topping ON JSON_CONTAINS(CAST(CONCAT('[', extras, ']') AS JSON), CAST(extra_topping.topping_id AS JSON))
 LEFT JOIN pizza_names ON customer_orders_with_id.pizza_id = pizza_names.pizza_id
 GROUP BY customer_order_id;
+
+SELECT 
+	o.order_id,
+    c.customer_id,
+    c.pizza_id,
+    c.exclusions,
+    c.extras,
+    c.order_time,
+    o.new_order_items
+FROM order_item o
+JOIN customer_orders_temp c
+	USING (order_id);
+
