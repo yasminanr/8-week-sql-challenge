@@ -117,3 +117,25 @@ JOIN pizza_toppings t
 GROUP BY e.exclusions
 ;
 
+-- Question 4: Generate an order item for each record in the customers_orders table in the format of one of the following:
+-- Meat Lovers
+-- Meat Lovers - Exclude Beef
+-- Meat Lovers - Extra Bacon
+-- Meat Lovers - Exclude Cheese, Bacon - Extra Mushroom, Peppers
+
+WITH customer_orders_with_id AS (
+	SELECT (@rn := @rn + 1) AS customer_order_id, customer_orders.*
+	FROM customer_orders CROSS JOIN
+			(SELECT @rn := 0) vars
+)
+SELECT 
+	CONCAT_WS(' - ', 
+		GROUP_CONCAT(DISTINCT(pizza_name)), 
+		CONCAT("Exclude ",GROUP_CONCAT(DISTINCT(excluded_topping.topping_name) SEPARATOR ', ')),
+		CONCAT("Extra ", GROUP_CONCAT(DISTINCT(extra_topping.topping_name) SEPARATOR ', '))
+	) AS new_order_items
+FROM customer_orders_with_id
+LEFT JOIN pizza_toppings excluded_topping ON JSON_CONTAINS(CAST(CONCAT('[', exclusions, ']') AS JSON), CAST(excluded_topping.topping_id AS JSON))
+LEFT JOIN pizza_toppings extra_topping ON JSON_CONTAINS(CAST(CONCAT('[', extras, ']') AS JSON), CAST(extra_topping.topping_id AS JSON))
+LEFT JOIN pizza_names ON customer_orders_with_id.pizza_id = pizza_names.pizza_id
+GROUP BY customer_order_id;
