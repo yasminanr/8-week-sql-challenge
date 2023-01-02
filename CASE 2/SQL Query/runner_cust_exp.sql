@@ -98,7 +98,8 @@ SELECT
 	runner_id,
     ROUND(100 * SUM(
 		CASE WHEN distance = 0 THEN 0
-		ELSE 1 END) / COUNT(*)) AS success_percentage
+		ELSE 1 END) / COUNT(*)) AS successful_percentage
 FROM runner_orders_temp
-GROUP BY runner_id;
+GROUP BY runner_id
+ORDER BY successful_percentage DESC;
 
