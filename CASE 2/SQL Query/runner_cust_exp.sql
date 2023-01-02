@@ -5,7 +5,7 @@
 
 -- Question 1: How many runners signed up for each 1 week period? (i.e. week starts 2021-01-01)
 SELECT 
-	WEEK(registration_date) AS registration_week, 
+	WEEK(registration_date, 5) AS registration_week, 
 	COUNT(runner_id) AS num_of_runners
 FROM runners
 GROUP BY registration_week;
