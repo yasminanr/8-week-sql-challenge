@@ -51,7 +51,7 @@ WITH pizza_prep AS
 
 SELECT 
 	pizza_order, 
-	AVG(prep_time) AS avg_prep_minutes
+	ROUND(AVG(prep_time)) AS avg_prep_minutes
 FROM pizza_prep
 WHERE prep_time > 1
 GROUP BY pizza_order;
