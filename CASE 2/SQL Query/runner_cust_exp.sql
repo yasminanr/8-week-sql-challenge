@@ -28,7 +28,7 @@ WITH time_diff AS
 
 SELECT
 	runner_id,
-	AVG(pickup_minutes) AS average_in_minutes
+	ROUND(AVG(pickup_minutes)) AS average_in_minutes
 FROM time_diff
 WHERE pickup_minutes > 1
 GROUP BY runner_id;
