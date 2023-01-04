@@ -37,5 +37,23 @@ JOIN plans p
 	USING (plan_id)
 WHERE s.customer_id = 11;
 
+SELECT
+	s.customer_id,
+	s.plan_id,
+	p.plan_name,
+	s.start_date
+FROM subscriptions s
+JOIN plans p 
+	USING (plan_id)
+WHERE s.customer_id = 13;
 
+SELECT
+	s.customer_id,
+	s.plan_id,
+	p.plan_name,
+	s.start_date
+FROM subscriptions s
+JOIN plans p 
+	USING (plan_id)
+WHERE s.customer_id = 15;
 
