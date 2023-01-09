@@ -1,4 +1,4 @@
-# <p align="center" style="margin-top: 0px;">💰 Customer Nodes Rxploration 💰
+# <p align="center" style="margin-top: 0px;">💰 Customer Nodes Exploration 💰
 
 ## Solution and Explanation
 
