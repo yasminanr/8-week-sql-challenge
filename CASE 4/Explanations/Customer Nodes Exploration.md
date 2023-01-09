@@ -14,7 +14,7 @@ FROM customer_nodes;
 - Use COUNT DISTINCT to calculate the number of unique nodes. 
 
 #### Output:
-
+<img width="82" alt="nodes1" src="https://user-images.githubusercontent.com/70214561/211248677-7a0e3e33-084d-4d09-bc56-a91b5d33de3c.png">
 
 - There are 5 unique nodes on the Data Bank system.
 
@@ -38,7 +38,7 @@ ORDER BY r.region_id;
 - Group by the region ID.
 
 #### Output:
-
+<img width="205" alt="nodes2" src="https://user-images.githubusercontent.com/70214561/211248764-34802dfd-9b00-41a0-a57f-a8db79150ddf.png">
 
 - All regions has 5 unique nodes.
 - Australia has 770 nodes, the largest number of all regions.
@@ -67,8 +67,8 @@ ORDER BY r.region_id;
 - Group by the region ID.
 
 #### Output:
-
-
+<img width="226" alt="nodes3" src="https://user-images.githubusercontent.com/70214561/211248791-16257a69-e53a-4479-98a8-be20bdc80175.png">
+	
 - Australia has the most customers: 110.
 - America has 105 customers.
 - Africa has 102 customers.
@@ -89,7 +89,8 @@ WHERE end_date != '9999-12-31';
 - Get the average reallocation time with the AVG function.
 
 #### Output:
-
+<img width="94" alt="nodes4" src="https://user-images.githubusercontent.com/70214561/211248842-0727ec7f-26a0-42dc-b30c-c3571647b437.png">
+	
 - On average, customers are reallocated to different nodes within 14 days.
 
 ### Question 5: What is the median, 80th and 95th percentile for this same reallocation days metric for each region?
@@ -123,3 +124,4 @@ GROUP BY percentile, region_id;
 - Get the 50th, 80th, and 95th percentiles.
 
 #### Output:
+<img width="210" alt="nodes5" src="https://user-images.githubusercontent.com/70214561/211248878-8edaf686-44c5-45bb-8b88-df52650a1f52.png">
