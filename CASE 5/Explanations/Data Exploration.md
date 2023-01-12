@@ -177,6 +177,7 @@ ORDER BY calendar_year;
 #### Output:
 <img width="417" alt="exp7" src="https://user-images.githubusercontent.com/70214561/212104703-dec44897-fdfa-4520-80e1-ff69725e1932.png">	
 - The unknown category has the highest sales percentage overall.
+<br>
 - The couples category has the lowest sales percentage.
 
 ### Question 8: Which age_band and demographic values contribute the most to Retail sales?
@@ -196,6 +197,7 @@ ORDER BY contribution_percentage DESC;
 #### Output:
 <img width="358" alt="exp8" src="https://user-images.githubusercontent.com/70214561/212104807-9a3277a8-9ad2-47a0-9875-17bc70b98416.png">	
 - The unknown age_band and demographic contributes the most to retail sales, followed by retirees.
+<br>
 - The young adults age_band contributes the least to retail sales.
 
 ### Question 9: Can we use the avg_transaction column to find the average transaction size for each year for Retail vs Shopify? If not - how would you calculate it instead?
