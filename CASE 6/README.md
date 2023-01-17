@@ -1,4 +1,5 @@
 # <p align="center" style="margin-top: 0px;">🐟 Case Study #6 - Clique Bait 🐟
+<img src="https://user-images.githubusercontent.com/70214561/212825419-983f3906-242d-44a8-8ee3-cb0f35f787c4.png" alt="Image" width="500" height="520">
 
 View the case study [here](https://8weeksqlchallenge.com/case-study-6/).
 
@@ -8,6 +9,7 @@ Clique Bait is not like your regular online seafood store - the founder and CEO 
 In this case study - you are required to support Danny’s vision and analyse his dataset and come up with creative solutions to calculate funnel fallout rates for the Clique Bait online store.
 
 ## Entity Relationship Diagram
+<img width="825" alt="case6erd" src="https://user-images.githubusercontent.com/70214561/212825560-139d055b-baf1-44fc-8937-0ca1a3621605.png">
 
 ## Case Study Questions
 ## Data Cleansing Steps
