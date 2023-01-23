@@ -155,3 +155,31 @@ FROM order_item o
 JOIN customer_orders_temp c
 	USING (order_id);
 
+-- Question 5: Generate an alphabetically ordered comma separated ingredient list for each pizza order 
+-- from the customer_orders table and add a 2x in front of any relevant ingredients
+-- For example: "Meat Lovers: 2xBacon, Beef, ... , Salami"
+WITH customer_orders_with_id AS (
+	SELECT (@rn := @rn + 1) AS customer_order_id, customer_orders.*
+	FROM customer_orders CROSS JOIN
+			(SELECT @rn := 0) vars
+),
+pizza_ingredients AS (
+	SELECT 
+		pizza_recipes.pizza_id, 
+        pizza_name, 
+        topping_name
+	FROM pizza_recipes
+	JOIN pizza_toppings ON JSON_CONTAINS(CAST(CONCAT('[', toppings, ']') AS JSON), CAST(topping_id AS JSON))
+	JOIN pizza_names ON pizza_recipes.pizza_id = pizza_names.pizza_id
+	ORDER BY pizza_recipes.pizza_id, topping_name
+)
+SELECT
+	GROUP_CONCAT(DISTINCT(order_id)) order_id, 
+	CONCAT(
+		GROUP_CONCAT(DISTINCT(pizza_name)), 
+		": ",
+		GROUP_CONCAT(pizza_ingredients.topping_name SEPARATOR ', ')
+	) ingredient_list
+FROM customer_orders_with_id
+JOIN pizza_ingredients ON customer_orders_with_id.pizza_id = pizza_ingredients.pizza_id
+GROUP BY customer_order_id;
