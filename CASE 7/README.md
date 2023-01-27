@@ -1,13 +1,13 @@
 # <p align="center" style="margin-top: 0px;">👕 Case Study #7 - Balanced Tree Clothing Co. 👕
 
+<img src="https://user-images.githubusercontent.com/70214561/215172192-4bb77255-2f33-4cbd-a694-9d6009f3c5e9.png" alt="Image" width="500" height="520">
+
 View the case study [here](https://8weeksqlchallenge.com/case-study-7/).
 
 Balanced Tree Clothing Company prides themselves on providing an optimised range of clothing and lifestyle wear for the modern adventurer!
 
 ## Problem Statement
 Danny, the CEO of this trendy fashion company has asked you to assist the team’s merchandising teams analyse their sales performance and generate a basic financial report to share with the wider business.
-
-## Entity Relationship Diagram
 
 ## Case Study Questions
 The following questions can be considered key business questions and metrics that the Balanced Tree team requires for their monthly reports.
