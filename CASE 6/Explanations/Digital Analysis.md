@@ -11,8 +11,8 @@ FROM users;
 ````
 
 #### Output:
-
-
+<img width="70" alt="digital1" src="https://user-images.githubusercontent.com/70214561/219731110-477ba695-7ed0-48c3-813d-375f4b1cb75e.png">
+	
 ### Question 2: How many cookies does each user have on average?
 
 ````sql
@@ -31,8 +31,8 @@ FROM user_cookies;
 ````
 
 #### Output:
-
-
+<img width="71" alt="digital2" src="https://user-images.githubusercontent.com/70214561/219731277-35c9ece8-0d76-4d04-970c-1de86604876b.png">
+	
 ### Question 3: What is the unique number of visits by all users per month?
 
 ````sql
@@ -45,8 +45,8 @@ ORDER BY month_visit;
 ````
 
 #### Output:
-
-
+<img width="131" alt="digital3" src="https://user-images.githubusercontent.com/70214561/219731404-d3c92cee-102a-444d-a8eb-3be21eba445f.png">
+	
 ### Question 4: What is the number of events for each event type?
 
 ````sql
@@ -61,8 +61,8 @@ GROUP BY e.event_type;
 ````
 
 #### Output:
-
-
+<img width="218" alt="digital4" src="https://user-images.githubusercontent.com/70214561/219731532-a4df1abb-4625-41f9-8593-a551c2468c40.png">
+	
 ### Question 5: What is the percentage of visits which have a purchase event?
 
 ````sql
@@ -74,8 +74,8 @@ WHERE event_type = 3;
 ````
 
 #### Output:
-
-
+<img width="136" alt="digital5" src="https://user-images.githubusercontent.com/70214561/219731754-a2aa24c5-9817-4cbd-a3bd-19a476c2f27a.png">
+	
 ### Question 6: What is the percentage of visits which view the checkout page but do not have a purchase event?
 
 ````sql
@@ -95,8 +95,8 @@ FROM visits_cte;
 ````
 
 #### Output:
-
-
+<img width="149" alt="digital6" src="https://user-images.githubusercontent.com/70214561/219731904-d7602ceb-f6ad-4e4a-b7de-8d003fd56003.png">
+	
 ### Question 7: What are the top 3 pages by number of views?
 
 ````sql
@@ -114,8 +114,8 @@ LIMIT 3;
 ````
 
 #### Output:
-
-
+<img width="192" alt="digital7" src="https://user-images.githubusercontent.com/70214561/219732045-0e30984a-749d-4d8b-a363-71bb23c4efe4.png">
+	
 ### Question 8: What is the number of views and cart adds for each product category?
 
 ````sql
@@ -132,8 +132,8 @@ ORDER BY views DESC;
 ````
 
 #### Output:
-
-
+<img width="192" alt="digital8" src="https://user-images.githubusercontent.com/70214561/219732161-d9ae7b18-0e93-485f-929f-ae1bb1dd61fe.png">
+	
 ### Question 9: What are the top 3 products by purchases?
 
 ````sql
@@ -162,3 +162,4 @@ LIMIT 3;
 ````
 
 #### Output:
+<img width="230" alt="digital9" src="https://user-images.githubusercontent.com/70214561/219732300-a6ed5b66-bdd3-42c9-bc45-5232f6cc330c.png">
