@@ -12,7 +12,7 @@ In this case study - you are required to support Danny’s vision and analyse hi
 <img width="825" alt="case6erd" src="https://user-images.githubusercontent.com/70214561/212825560-139d055b-baf1-44fc-8937-0ca1a3621605.png">
 
 ## Case Study Questions
-## Data Cleansing Steps
+## Digital Analysis
 Using the available datasets - answer the following questions using a single query for each one:
 1. How many users are there?
 2. How many cookies does each user have on average?
